@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		gRE1gGCJCPoaiY5xyzMxUoQbnGE=
+		Zr+tEDrJ6Iqi8U/KmP0/SD0Qnl0=
 		</data>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<data>
@@ -39,7 +39,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b8EGVoye+Vg8lR6pwZ39ngaUThE=
+		PT3qMBn9b7t4DVAqLhymugcjaF0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -51,19 +51,19 @@
 		</data>
 		<key>PlugIns/TravelGuideTests.xctest.dSYM/Contents/Resources/DWARF/TravelGuideTests</key>
 		<data>
-		5Drv8aZnQLSE3r17JmsF7wzxCCI=
+		TFkKSPAKA2hPOGbr0JsSAujzaEc=
 		</data>
 		<key>PlugIns/TravelGuideTests.xctest/Info.plist</key>
 		<data>
-		jVT5Bzt6P9lo4bfrUJ56kTqDH/w=
+		sLgsVMWoVWnIfNa0Yr0mXhUOGQo=
 		</data>
 		<key>PlugIns/TravelGuideTests.xctest/TravelGuideTests</key>
 		<data>
-		/IkPG001scyGiZQnv+qRmU6eBo4=
+		rCUjUBAd3adQju3ClGbjLKCo8RQ=
 		</data>
 		<key>PlugIns/TravelGuideTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		zOh3dGnw0AbHIpYZnbE+jBUb/Kw=
+		xo9IYoosfDTiTErD/ffCZdW9qBw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -72,11 +72,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gRE1gGCJCPoaiY5xyzMxUoQbnGE=
+			Zr+tEDrJ6Iqi8U/KmP0/SD0Qnl0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1fieA6Hc0xHT1MtcP3QafMKjYJY68EQSs6cZRCAoyY8=
+			G4HfNhxr3S87X/bjDmqe9HExRNuWiOHz20sYQgIA+RY=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
@@ -162,44 +162,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5Drv8aZnQLSE3r17JmsF7wzxCCI=
+			TFkKSPAKA2hPOGbr0JsSAujzaEc=
 			</data>
 			<key>hash2</key>
 			<data>
-			C4+RsR6aI1/RsqxiDZmZlr/Jwcq35pfZCPOXyUAgFYg=
+			CCQ9WG0CdHVEnN1xe/uQvT6VpXUZK7mZUeFGoiHCNws=
 			</data>
 		</dict>
 		<key>PlugIns/TravelGuideTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jVT5Bzt6P9lo4bfrUJ56kTqDH/w=
+			sLgsVMWoVWnIfNa0Yr0mXhUOGQo=
 			</data>
 			<key>hash2</key>
 			<data>
-			eGa34dnJgeshvAkldGFU1Bk/S7uNSE3JAHj8AuQR3R4=
+			eNpfBfqOf8y+bymUUa1EIF5n+ZoEQNnmYNZf5OPOrpE=
 			</data>
 		</dict>
 		<key>PlugIns/TravelGuideTests.xctest/TravelGuideTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/IkPG001scyGiZQnv+qRmU6eBo4=
+			rCUjUBAd3adQju3ClGbjLKCo8RQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			cF71om1wuOAr1EdHFzzfcu0cy4IWJcmfiGp4HV0Z8y0=
+			k/Pvkw037IDhKQqJJ4Vj0fCgqxFEMEt6pVhlpom4fWM=
 			</data>
 		</dict>
 		<key>PlugIns/TravelGuideTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zOh3dGnw0AbHIpYZnbE+jBUb/Kw=
+			xo9IYoosfDTiTErD/ffCZdW9qBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			wP1PgLF44KTT3ZxOmRMNb8gKbMmGg6zTl1lM1wHb10c=
+			3NDfL/EWzRfwsAo/rkNPdKhc7eR4WLph1HG5risp8UE=
 			</data>
 		</dict>
 	</dict>

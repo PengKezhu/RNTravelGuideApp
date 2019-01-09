@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/Libraries/Text/Text/NSTextStorage+FontScaling.m \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/Libraries/Text/Text/NSTextStorage+FontScaling.h
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/Libraries/Text/Text/NSTextStorage+FontScaling.m \
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/Libraries/Text/Text/NSTextStorage+FontScaling.h

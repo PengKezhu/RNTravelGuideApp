@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/React/Profiler/RCTFPSGraph.m \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/React/Profiler/RCTFPSGraph.h \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/React/Base/RCTAssert.h
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/React/Profiler/RCTFPSGraph.m \
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/React/Profiler/RCTFPSGraph.h \
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/React/Base/RCTAssert.h

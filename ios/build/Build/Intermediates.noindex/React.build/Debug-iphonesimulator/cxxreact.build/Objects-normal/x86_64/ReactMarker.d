@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
-  /Users/zhuzi/Documents/RN/TravelGuide/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
+  /Users/zhuzi/Documents/RN/RNTravelGuideApp/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h

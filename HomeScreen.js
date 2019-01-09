@@ -7,6 +7,7 @@ import {
    FlatList,
    Image,
    Dimensions,
+   TouchableHighlight
    } from 'react-native'
 import {
     createStackNavigator,
@@ -16,6 +17,7 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import { ScrollView } from 'react-native-gesture-handler';
 import PageControl from 'react-native-page-control';
+import WebController from './WebController'
 
 class HomeScreen extends Component {
 
@@ -45,7 +47,11 @@ class HomeScreen extends Component {
   };
 
   componentDidMount() {
-    fetch('http://47.93.151.92/hlw-local/weather/getWeather.json?placeId=10010&time=2018-12-02')
+
+    let date = new Date();
+    let dateStr = date.getFullYear() + '-' + date.getMonth() + 1 + '-' + date.getDate();
+
+    fetch('http://47.93.151.92/hlw-local/weather/getWeather.json?placeId=10010&time=' + dateStr)
     .then((response) =>{
       // alert(response.json());
       return response.json()
@@ -80,7 +86,11 @@ _listHeader() {
   let pageControlWidth = 10 * this.state.banners.length;
   for (let index = 0; index < this.state.banners.length; index++) {
     const element = this.state.banners[index];
-    array.push(<Image source={{uri : element.img}} style={{width: windowWidth, aspectRatio:1.3}}></Image>)
+    let picture = (<TouchableHighlight onPress={(sender)=>{this.props.navigation.navigate('WebController')}}>
+      <Image source={{uri : element.img}} style={{width: windowWidth, aspectRatio:1.3}}></Image>
+    </TouchableHighlight>);
+    
+    array.push(picture)
   }
     
   return (<View style={styles.headerContainer}>
@@ -111,12 +121,19 @@ _listHeader() {
   }
 }
 
-const HomeContainer = createStackNavigator({
+const HomeContainer = createStackNavigator(
+  {
     Home : {
-        screen : HomeScreen,
-        headerTitle : '123',
+        screen : HomeScreen
+    },
+    WebController : {
+      screen : WebController
     }
-  });
+  },
+    {
+      initialRouteName: "Home"
+    }
+);
 
   const styles = StyleSheet.create({
     headerContainer : {
