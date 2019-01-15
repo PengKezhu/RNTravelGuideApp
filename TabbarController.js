@@ -8,6 +8,7 @@ import {
    } from 'react-native'
 import {createAppContainer, createStackNavigator} from 'react-navigation'
 import HomeScreen from './HomeScreen';
+import Discovery from './Discovery'
 
 export default class TabbarController extends Component {
     static navigationOptions = {
@@ -17,15 +18,21 @@ export default class TabbarController extends Component {
     constructor (props) {
         super(props);
         this.state = {
-          selectedTab : 1
+          selectedTab : 1,
+          hide: false
         }
+        this.hideTabbarBar = this.hideTabbarBar.bind(this);
       }
-    
+
+      hideTabbarBar() {
+        this.setState({hide : true})
+      }
+    //hideTabbarCallBack={()=>{}}
       render() {
         return (
           <View style={styles.container}>
             <TabBarIOS   
-              style={{width:'100%', height:50}}        
+              style={{width:'100%', height:this.state.hide ? 0 : 50}}        
               tintColor = "red"       // 被选中标签颜色
               translucent={true}    // TabBarIOS不需要半透明效果
             >
@@ -36,7 +43,7 @@ export default class TabbarController extends Component {
                   this.setState({
                     selectedTab: 1
                   })}}>
-                  <HomeScreen></HomeScreen>
+                  <HomeScreen name='Peter'></HomeScreen>
                 </TabBarIOS.Item>          
     
                 <TabBarIOS.Item
@@ -46,7 +53,7 @@ export default class TabbarController extends Component {
                   this.setState({
                     selectedTab: 2
                 })}}>
-                  <View style={{width:100,height:100}}><Text style={{textAlign:'center'}}>第一页</Text></View>
+                  <Discovery name='Kevin'></Discovery>
                 </TabBarIOS.Item>
     
                 <TabBarIOS.Item

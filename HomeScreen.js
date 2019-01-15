@@ -34,13 +34,16 @@ class HomeScreen extends Component {
   componentWillMount() {
     //绑定方法
     this.props.navigation.setParams({weaterInfo: this.state.weather});
+    alert(JSON.stringify(this.props));
   }
 
   //自定义导航栏
   static navigationOptions = ({navigation, screenProps}) => {
     const params = navigation.state.params || {};
+    const {width, height} = Dimensions.get('window');
+    let isIphoneX = width == 375 && height == 812;
     let navi = {
-      header: <LinearGradient colors={['#00ffff', '#4a86e8']} style={{height: 64, width:'100%'}} start={{x:0, y:0}} end={{x:1,y:1}}>
+      header: <LinearGradient colors={['#00ffff', '#4a86e8']} style={{height: isIphoneX ? 88 : 64, width:'100%'}} start={{x:0, y:0}} end={{x:1,y:1}}>
                   <Text style={{position:'absolute', left:40, top: 35, color:'white'}}>{params.weaterInfo}</Text>
               </LinearGradient>,}
     return navi;
@@ -86,7 +89,10 @@ _listHeader() {
   let pageControlWidth = 10 * this.state.banners.length;
   for (let index = 0; index < this.state.banners.length; index++) {
     const element = this.state.banners[index];
-    let picture = (<TouchableHighlight onPress={(sender)=>{this.props.navigation.navigate('WebController')}}>
+    let picture = (<TouchableHighlight onPress={(sender)=>{
+      // this.props.hideTabbarCallBack();
+      // alert(this.props.hideTabbarCallBack);
+      this.props.navigation.navigate('WebController', {url : element.detail_url})}}>
       <Image source={{uri : element.img}} style={{width: windowWidth, aspectRatio:1.3}}></Image>
     </TouchableHighlight>);
     
@@ -113,9 +119,9 @@ _listHeader() {
   render() {
     return (
       <View style={styles.container}>
-        <FlatList ListHeaderComponent={this.state.banners.length ? this._listHeader() : null} automaticallyAdjustContentInsets={false} >
-
+        <FlatList ListHeaderComponent={this.state.banners.length ? this._listHeader() : null} automaticallyAdjustContentInsets={false} style={{width:'100%', height:'0%', backgroundColor:'black'}}>
         </FlatList>
+        <Text>{this.props.name}+fdfsf</Text>
       </View>
     )
   }
